@@ -3,7 +3,7 @@
 /* print Fahrenheit - Celsius table
 for fahr = 0 to 300*/
 
-main()
+int main()
 {
     int fahr, celsius;
     int lower, upper, step;
@@ -15,7 +15,7 @@ main()
     fahr = lower;
     while (fahr <= upper) {
         celsius = 5*(fahr-32)/9;
-        printf("%d\t%d\n", fahr, celsius);
+        printf("%3d\t%6d\n", fahr, celsius);
         // %d is a format specifier for an integer
         // \t is a tab character
         // \n is a newline character
